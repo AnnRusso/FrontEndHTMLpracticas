@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Levantar Pedido Pastel</title>
+</head>
+<body>
+    <img src="C:\Users\Anahi\Documents\LaunchX\FrontEnd\HTML\PracticaHTML\cakeShop.png" alt="logo cake shop" width="150px">
+    <a href="./Pasteleria.html">INICIO</a>
+    <h1>Llena el formulario para comenzar con tu pastel</h1>
+
+    <form action="pedidoPastel.js">
+        <!--DATOS BASICOS-->
+        <label for="Nombre">Tu Nombre</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+
+        <br><br>
+
+        <label for="telefono">Número telefonico</label><br>
+        <input type="number" name="telefono" id="telefono" placeholder="">
+
+        <br><br>
+
+        <label for="correo">Correo Electronico</label><br>
+        <input type="email" name="correo" id="correo" placeholder="correo@dominio.com">
+
+        <!--SABOR-->
+        <p>¿De que sabor quieres tu pastel? (es posible elegir más de un sabor)</p>
+        <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
+        <label for="chocolate">Sabor Chocolate</label><br>
+
+        <input type="checkbox" id="zanahoria" name="zanahoria" value="Zanahoria">
+        <label for="zanahoria">Sabor Zanahoria</label><br>
+
+        <input type="checkbox" id="fresa" name="fresa" value="Fresa">
+        <label for="fresa">Sabor Fresa</label><br>
+
+        <input type="checkbox" id="moka" name="moka" value="Moka">
+        <label for="moka">Sabor Moka</label><br>
+
+        <input type="checkbox" id="vainilla" name="vainilla" value="Vainilla">
+        <label for="vainilla">Sabor Vainilla</label><br>
+        
+        <!--DECORACION-->
+        <p>¿Cómo quieres tu decoración? (es posible elegir más de una decoración)</p>
+        <input type="checkbox" id="sencillo" name="sencillo" value="sencillo">
+        <label for="sencillo">Letrero Sencillo</label><br>
+
+        <input type="checkbox" id="figura" name="figura" value="figura">
+        <label for="figura">Figura Sencilla</label><br>
+
+        <input type="checkbox" id="variasFiguras" name="variasFiguras" value="variasFiguras">
+        <label for="variasFiguras">Varias Figuras</label><br>
+
+        <input type="checkbox" id="textura" name="textura" value="textura">
+        <label for="textura">Texturas</label><br>
+
+        <input type="checkbox" id="doblePiso" name="doblePiso" value="doblePiso">
+        <label for="doblePiso">Doble Piso</label><br>
+
+        <br>
+
+        <!--DESCRIPCION GENERAL-->
+        <label for="descripcion">Descripción General:</label><br>
+        <textarea name="descripcion" rows="5" cols="60" id="comentarios"></textarea> 
+
+        <br>
+        <br>
+
+        <!--IMAGEN DE REFERENCIA-->
+        <label for="descripcion">También puede enviarnos alguna imagen como referencia:</label><br>
+        <input type="file" id="archivo1" name="archivo1"><br><br>
+
+        <!--ENVIOdePEDIDO-->
+        <br>
+        <input type="reset">
+        <input type="submit">
+        <br><br>
+
+</body>
+</html>
